@@ -1,0 +1,66 @@
+<html>
+            <head>
+                <meta charset='UTF-8'>
+                <script type='text/javascript'>
+                    setTimeout(function(){{
+                        location.reload();
+                    }}, 60000); 
+                </script>
+                <style>
+                    body {{
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        /* Estas 4 líneas hacen la magia de centrar todo el contenido */
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh; /* Ocupa el 100% del alto del WebView */
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        background-color: transparent;
+                    }}
+                    .texto-personalizado {{
+                        font-size: 11px;
+                        color: #666666; /* Gris suave para que no compita con el anuncio */
+                        margin-bottom: 8px; /* Separación con el primer anuncio */
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }}
+                    .contenedor-anuncio {{
+                        margin: 5px 0; /* Separación sutil entre los banners */
+                    }}
+                </style>
+            </head>
+            <body>
+
+                <!-- ANUNCIO 2: (320x50) -->
+                <div class='contenedor-anuncio' style='width:320px; height:50px;'>
+                    <script type='text/javascript'>
+                      atOptions = {{
+                        'key' : 'ab324a06e328fdef5c9f83e517f1877a',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {{}}
+                      }};
+                    </script>
+                    <script type='text/javascript' src='https://www.highrevenueformat.com/ab324a06e328fdef5c9f83e517f1877a/invoke.js'></script>
+                </div>
+
+                <!-- ANUNCIO 1: (300x250) -->
+                <div class='contenedor-anuncio' style='width:300px; height:250px;'>
+                    <script type='text/javascript'>
+                      atOptions = {{
+                        'key' : 'e8213ad612ae47b8693959bc4709ab6e',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {{}}
+                      }};
+                    </script>
+                    <script type='text/javascript' src='https://www.highrevenueformat.com/e8213ad612ae47b8693959bc4709ab6e/invoke.js'></script>
+                </div>
+
+            </body>
+            </html>
