@@ -1,34 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
-            <body>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Publicidad</title>
+    <script type='text/javascript'>
+        // Recarga la página automáticamente cada 60 segundos (60000 ms)
+        setTimeout(function(){
+            location.reload();
+        }, 60000); 
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: transparent;
+        }
+        .texto-personalizado {
+            font-size: 11px;
+            color: #666666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contenedor-anuncio {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
 
-                <!-- ANUNCIO 2: (320x50) -->
-                <div class='contenedor-anuncio' style='width:320px; height:50px;'>
-                    <script type='text/javascript'>
-                      atOptions = {{
-                        'key' : 'ab324a06e328fdef5c9f83e517f1877a',
-                        'format' : 'iframe',
-                        'height' : 50,
-                        'width' : 320,
-                        'params' : {{}}
-                      }};
-                    </script>
-                    <script type='text/javascript' src='https://www.highrevenueformat.com/ab324a06e328fdef5c9f83e517f1877a/invoke.js'></script>
-                </div>
+    <!-- Tu texto personalizado directamente en el HTML -->
+    <div class='texto-personalizado'>Publicidad - Apoya nuestra aplicación gratuita</div>
 
-                <!-- ANUNCIO 1: (300x250) -->
-                <div class='contenedor-anuncio' style='width:300px; height:250px;'>
-                    <script type='text/javascript'>
-                      atOptions = {{
-                        'key' : 'e8213ad612ae47b8693959bc4709ab6e',
-                        'format' : 'iframe',
-                        'height' : 250,
-                        'width' : 300,
-                        'params' : {{}}
-                      }};
-                    </script>
-                    <script type='text/javascript' src='https://www.highrevenueformat.com/e8213ad612ae47b8693959bc4709ab6e/invoke.js'></script>
-                </div>
+    <!-- ANUNCIO 2: (320x50) -->
+    <div class='contenedor-anuncio' style='width:320px; height:50px;'>
+        <script type='text/javascript'>
+          atOptions = {
+            'key' : 'ab324a06e328fdef5c9f83e517f1877a',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+        </script>
+        <script type='text/javascript' src='https://www.highrevenueformat.com/ab324a06e328fdef5c9f83e517f1877a/invoke.js'></script>
+    </div>
 
-            </body>
-            </html>
+    <!-- ANUNCIO 1: (300x250) -->
+    <div class='contenedor-anuncio' style='width:300px; height:250px;'>
+        <script type='text/javascript'>
+          atOptions = {
+            'key' : 'e8213ad612ae47b8693959bc4709ab6e',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        </script>
+        <script type='text/javascript' src='https://www.highrevenueformat.com/e8213ad612ae47b8693959bc4709ab6e/invoke.js'></script>
+    </div>
+
+</body>
+</html>
